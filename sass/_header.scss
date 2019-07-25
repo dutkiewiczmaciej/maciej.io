@@ -1,0 +1,57 @@
+.header {
+    background-image: radial-gradient(rgba($color-primary-dark, .5), rgba($color-primary, .5)), url(../img/hero.jpeg);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: 100vw;
+    grid-row-gap: 5rem;
+    justify-items: center;
+    align-items: center;
+
+    p {
+        font-size: 2.6rem;
+        color: $color-grey-light-1;
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-column-gap: 1.5rem;
+        align-items: center;
+
+        &::before,
+        &::after {
+            content: "";
+            height: 1px;
+            display: block;
+            background-color: currentColor;
+
+        }
+    }
+
+    &__picture {
+        height: 22rem;
+        display: block;
+        border-radius: 50%;
+        border: .2rem solid $color-secondary;
+        box-shadow: 0 2rem 3rem rgba($color: #000, $alpha: .3)
+    }
+
+    &__welcome {
+        transition: all .3s ease-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__icons {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(min-content, 1fr));
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+
+    &__icon {
+        height: 3.5rem;
+        fill: $color-secondary;
+    }
+}
+
