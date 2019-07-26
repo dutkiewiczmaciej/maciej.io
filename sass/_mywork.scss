@@ -1,0 +1,6 @@
+.mywork {
+    height: 100vh;
+    background-color: $color-grey-light-1;
+    display: grid;
+    grid-template-columns: minmax(3rem, 1fr) repeat(8, minmax(max-content, 10rem)) minmax(3rem, 1fr);
+}

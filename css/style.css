@@ -33,21 +33,22 @@ body {
   line-height: 1.6; }
 
 .container {
-  display: grid;
-  grid-template-rows: 100vh; }
+  display: grid; }
 
 .header {
+  height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(19, 35, 96, 0.8), rgba(75, 123, 236, 0.8)), url(../img/hero.jpeg);
   background-size: cover;
+  background-position: top;
   display: grid;
   grid-template-rows: repeat(7, 1fr);
   grid-template-columns: 100vw;
   grid-row-gap: 5rem;
   justify-items: center;
   align-items: center; }
-  .header p {
+  .header__heading {
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 1rem;
     font-size: 2.6rem;
     color: #faf9f9;
@@ -55,13 +56,16 @@ body {
     grid-template-columns: 1fr max-content 1fr;
     grid-column-gap: 1.5rem;
     align-items: center; }
-    .header p::before, .header p::after {
+    .header__heading::before, .header__heading::after {
       content: "";
       height: 1px;
+      width: 8rem;
       display: block;
       background-color: currentColor; }
+    .header__heading::before {
+      margin-right: 1rem; }
   .header__picture {
-    height: 22rem;
+    height: 17rem;
     display: block;
     border-radius: 50%;
     border: 0.2rem solid #fffa65;
@@ -72,20 +76,64 @@ body {
       transform: scale(1.1); }
   .header__icons {
     display: grid;
-    grid-template-columns: repeat(6, minmax(min-content, 1fr));
+    grid-template-columns: minmax(3rem, 1fr) repeat(6, minmax(min-content, 4rem)) minmax(3rem, 1fr);
     grid-template-rows: 1fr;
-    align-items: center; }
+    align-items: center;
+    grid-column-gap: 6rem; }
   .header__icon {
     height: 3.5rem;
     fill: #fffa65;
     transition: all .2s ease-in;
-    cursor: pointer; }
+    cursor: pointer;
+    display: inline-block; }
     .header__icon:hover, .header__icon:active {
       transform: translateY(-1rem); }
+    .header__icon--1 {
+      grid-column: 2 / 3; }
   .header__arrow {
-    transition: all .2s ease-out; }
+    transition: all .2s ease-out;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    font-size: 2.6rem;
+    color: #faf9f9; }
     .header__arrow:hover, .header__arrow:active {
       transform: translateY(1rem); }
+  .header__navbar {
+    text-decoration: none;
+    list-style: none;
+    display: grid;
+    grid-template-columns: minmax(3rem, 1fr) repeat(3, minmax(max-content, 30rem)) minmax(3rem, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10rem;
+    justify-items: center; }
+  .header__navbar--link {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    padding: 1rem 1rem 1rem 2rem;
+    font-size: 2rem;
+    color: #faf9f9;
+    grid-row: 2 / 3; }
+    .header__navbar--link-1 {
+      grid-column: 2 / 3;
+      transition: all .2s ease-in-out; }
+      .header__navbar--link-1:hover, .header__navbar--link-1:active {
+        background-color: #fff;
+        color: #132360; }
+    .header__navbar--link-2 {
+      grid-column: 3 / 4;
+      transition: all .2s ease-in-out; }
+      .header__navbar--link-2:hover, .header__navbar--link-2:active {
+        background-color: #fff;
+        color: #132360; }
+    .header__navbar--link-3 {
+      grid-column: 4 / 5;
+      transition: all .2s ease-in-out; }
+      .header__navbar--link-3:hover, .header__navbar--link-3:active {
+        background-color: #fff;
+        color: #132360; }
 
 h1 {
   font-size: 4rem;
@@ -97,3 +145,9 @@ h2 {
   font-size: 3.5rem;
   text-transform: uppercase;
   color: #faf9f9; }
+
+.mywork {
+  height: 100vh;
+  background-color: #faf9f9;
+  display: grid;
+  grid-template-columns: minmax(3rem, 1fr) repeat(8, minmax(max-content, 10rem)) minmax(3rem, 1fr); }
