@@ -1,6 +1,63 @@
 .mywork {
+
     height: 100vh;
-    background-color: $color-grey-light-1;
-    display: grid;
-    grid-template-columns: minmax(3rem, 1fr) repeat(8, minmax(max-content, 10rem)) minmax(3rem, 1fr);
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 1), rgba($color-primary-dark, 1));
+    
+
+    &__content {
+        display: grid;
+        grid-template-columns: minmax(3rem, 1fr) repeat(6, minmax(max-content, 4rem)) minmax(3rem, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        margin-top: 20rem;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+
+        &--phone {
+
+            
+            img {
+                height: 30rem;
+                display: block;
+                -webkit-filter: drop-shadow(5px 5px 5px #222);
+                filter: drop-shadow(5px 5px 5px #222);
+                margin-bottom: 4rem;
+            }
+
+            &-1 {
+                grid-column: 2 / 3;
+                display: flex;
+                flex-direction: column;
+            }
+
+            &-2 {
+                grid-column: 4 / 5;
+                display: flex;
+                flex-direction: column;
+            }
+
+            &-3 {
+                grid-column: 6 / 8;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .btn {
+        justify-self: center;
+        align-self: center;
+        border: none;
+        background-image: linear-gradient(to right bottom, rgba($color-primary, 1), rgba($color-primary-dark, 1));
+        padding: 1.5rem;
+        border-radius: 20px;
+        font-family: inherit;
+        font-size: 2.5rem;
+        font-weight: 300;  
+        text-transform: uppercase;
+        color: $color-grey-light-1;
+        box-shadow: 0 1rem 2rem rgba($color: #000, $alpha: .3)
+    }
+
 }
