@@ -49,5 +49,6 @@ body {
 
 .container {
     display: grid;
+    scroll-snap-type: y mandatory;
 }
 

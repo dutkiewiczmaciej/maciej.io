@@ -1,4 +1,6 @@
 .header {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
     height: 100vh;
     background-image: linear-gradient(to right bottom, rgba($color-primary-dark, .8), rgba($color-primary, .8)), url(../img/hero.jpeg);
     background-size: cover;

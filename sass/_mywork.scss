@@ -1,4 +1,6 @@
 .mywork {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 1), rgba($color-primary-dark, 1));
     background-size: cover;
     background-position: top;
@@ -10,7 +12,7 @@
         grid-template-columns: minmax(3rem, 1fr) repeat(6, minmax(max-content, 4rem)) minmax(3rem, 1fr);
         grid-template-rows: 5rem repeat(2, 1fr);
         grid-row-gap: 3rem;
-        grid-column-gap: 5rem;
+        grid-column-gap: 10rem;
         align-items: center;
         justify-items: center;
         align-content: center;
@@ -32,7 +34,7 @@
 
             
             img {
-                height: 15rem;
+                height: 20rem;
                 display: block;
                 -webkit-filter: drop-shadow(5px 5px 5px #222);
                 filter: drop-shadow(5px 5px 5px #222);
