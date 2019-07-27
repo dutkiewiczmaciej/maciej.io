@@ -12,6 +12,10 @@
     justify-items: center;
     align-items: center;
 
+    &__mywork {
+        text-transform: uppercase;
+    }
+
     &__heading {
         text-transform: uppercase;
         font-weight: 400;

@@ -49,6 +49,8 @@ body {
   grid-row-gap: 5rem;
   justify-items: center;
   align-items: center; }
+  .header__mywork {
+    text-transform: uppercase; }
   .header__heading {
     text-transform: uppercase;
     font-weight: 400;
@@ -146,13 +148,16 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
-  text-transform: uppercase;
   color: #faf9f9; }
+
+h3 {
+  font-size: 3rem;
+  color: #fffa65; }
 
 .mywork {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  background-image: linear-gradient(to right bottom, #799df1, #132360);
+  background-image: linear-gradient(to right top, #799df1, #132360);
   background-size: cover;
   background-position: top; }
   .mywork__content {
@@ -232,3 +237,38 @@ h2 {
     text-transform: uppercase;
     color: #faf9f9;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+
+.aboutme {
+  height: 100vh;
+  position: relative; }
+  .aboutme__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100vh;
+    justify-items: center;
+    align-items: center; }
+    .aboutme__content--text {
+      width: 50vw;
+      background-image: linear-gradient(to right bottom, #799df1, #132360);
+      font-size: 3rem;
+      padding: 4rem;
+      color: #faf9f9;
+      font-weight: 300;
+      letter-spacing: 2px;
+      z-index: 1;
+      text-align: justify;
+      border-radius: 10px;
+      grid-column: 2 / 4; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .15; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
