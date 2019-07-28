@@ -1,7 +1,10 @@
 .mywork {
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    background-image: linear-gradient(to right top, rgba($color-primary-light, 1), rgba($color-primary-dark, 1));
+    /*background-image: linear-gradient(to right bottom, rgba($color-primary-light, 1), rgba($color-primary-dark, 1));
+    background-size: cover;
+    background-position: top;*/
+    background-image: linear-gradient(to right bottom, rgba($color-primary-dark, .8), rgba($color-primary, .8)), url(../img/hero.jpeg);
     background-size: cover;
     background-position: top;
     

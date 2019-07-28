@@ -77,7 +77,7 @@ body {
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3); }
   .header__welcome {
     transition: all .3s ease-out; }
-    .header__welcome:hover {
+    .header__welcome:hover, .header__welcome:active {
       transform: scale(1.1); }
   .header__icons {
     display: grid;
@@ -157,7 +157,10 @@ h3 {
 .mywork {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  background-image: linear-gradient(to right top, #799df1, #132360);
+  /*background-image: linear-gradient(to right bottom, rgba($color-primary-light, 1), rgba($color-primary-dark, 1));
+    background-size: cover;
+    background-position: top;*/
+  background-image: linear-gradient(to right bottom, rgba(19, 35, 96, 0.8), rgba(75, 123, 236, 0.8)), url(../img/hero.jpeg);
   background-size: cover;
   background-position: top; }
   .mywork__content {
@@ -274,3 +277,55 @@ h3 {
     height: 100%;
     width: 100%;
     object-fit: cover; }
+
+.footer {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  height: 25rem;
+  background-color: #faf9f9;
+  justify-content: center; }
+  .footer__list {
+    margin-top: 4rem;
+    font-size: 2.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    list-style: none;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr repeat(4, minmax(1fr, min-content)) 1fr;
+    align-content: center;
+    /*li:not(:last-child) {
+            margin-right: 10rem;
+        }*/ }
+    .footer__list--1 {
+      grid-column: 2 / 3; }
+    .footer__list--2 {
+      grid-column: 3 / 4; }
+    .footer__list--3 {
+      grid-column: 4 / 5; }
+    .footer__list--4 {
+      grid-column: 5 / 6; }
+    .footer__list li {
+      padding: 1rem 1rem; }
+      .footer__list li:hover, .footer__list li:active {
+        background-color: #132360;
+        color: #faf9f9;
+        padding: 1rem 1rem; }
+  .footer__email {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 2.4rem;
+    transition: all .3s ease-out;
+    grid-row: 2 / 3; }
+    .footer__email::before {
+      content: "";
+      height: 5px;
+      width: 30rem;
+      color: #132360; }
+    .footer__email:hover, .footer__email:active {
+      transform: scale(1.1); }
+
+.copyright {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  grid-row: 3 / 4; }

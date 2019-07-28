@@ -53,7 +53,8 @@
     &__welcome {
         transition: all .3s ease-out;
 
-        &:hover {
+        &:hover,
+        &:active {
             transform: scale(1.1);
         }
     }
