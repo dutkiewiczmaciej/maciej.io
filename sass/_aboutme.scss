@@ -1,8 +1,9 @@
 .aboutme {
     height: 100vh;
-    position: relative;
+    //position: relative;
     
-    //background-image: linear-gradient(to right bottom, rgba($color-primary-light, 1), rgba($color-primary-dark, 1));
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, .3), rgba($color-primary-dark, .3)), url(../img/aboutme.jpeg);
+    background-size: cover;
 
 
     &__content {
@@ -11,24 +12,25 @@
         grid-template-rows: 100vh;
         justify-items: center;
         align-items: center;
+        grid-column-gap: 2rem;
         
 
         &--text {
-            width: 50vw;
-            //background-color: rgba($color-primary, .7);
-            background-image: linear-gradient(to right bottom, rgba($color-primary-light, 1), rgba($color-primary-dark, 1));
+            width: 40vw;
+            background-color: rgba($color-grey-light-1, 1);
+            //background-image: linear-gradient(to right bottom, rgba($color-primary-light, 1), rgba($color-primary-dark, 1));
 
-            font-size: 3rem;
-            padding: 4rem;
-            color: $color-grey-light-1;
-            font-weight: 300;
+            font-size: 2.2rem;
+            padding: 3rem;
+            color: $color-primary-dark;
+            font-weight: 400;
             letter-spacing: 2px;
             z-index: 1;
             text-align: justify;
             border-radius: 10px;
             
 
-            grid-column: 2 / 4;
+            grid-column: 3 / 5;
             
 
         }

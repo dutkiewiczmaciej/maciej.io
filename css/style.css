@@ -240,25 +240,27 @@ h3 {
 
 .aboutme {
   height: 100vh;
-  position: relative; }
+  background-image: linear-gradient(to right bottom, rgba(121, 157, 241, 0.3), rgba(19, 35, 96, 0.3)), url(../img/aboutme.jpeg);
+  background-size: cover; }
   .aboutme__content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100vh;
     justify-items: center;
-    align-items: center; }
+    align-items: center;
+    grid-column-gap: 2rem; }
     .aboutme__content--text {
-      width: 50vw;
-      background-image: linear-gradient(to right bottom, #799df1, #132360);
-      font-size: 3rem;
-      padding: 4rem;
-      color: #faf9f9;
-      font-weight: 300;
+      width: 40vw;
+      background-color: #faf9f9;
+      font-size: 2.2rem;
+      padding: 3rem;
+      color: #132360;
+      font-weight: 400;
       letter-spacing: 2px;
       z-index: 1;
       text-align: justify;
       border-radius: 10px;
-      grid-column: 2 / 4; }
+      grid-column: 3 / 5; }
 
 .bg-video {
   position: absolute;
