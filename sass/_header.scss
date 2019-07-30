@@ -104,14 +104,15 @@
         text-decoration: none;
         list-style: none;
         display: grid;
-        grid-template-columns: minmax(3rem, 1fr) repeat(3, minmax(max-content, 30rem)) minmax(3rem, 1fr);
+        grid-template-columns: minmax(3rem, 1fr) repeat(3, auto-fit) minmax(3rem, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 10rem;
         justify-items: center;
+        
     }
 
     &__navbar--link {
-        display: inline-block;
+        //display: inline-block;
         text-transform: uppercase;
         font-weight: 400;
         letter-spacing: 1rem;
@@ -119,6 +120,7 @@
         font-size: 2rem;
         color: $color-grey-light-1;
         grid-row: 2 / 3;
+        align-self: center;
         
         
         

@@ -18,7 +18,7 @@
         
 
         &--text {
-            background-color: $color-primary-dark;
+            background-color: rgba($color-primary-dark, .8);
             //background-image: linear-gradient(to right bottom, rgba($color-primary-light, 1), rgba($color-primary-dark, 1));
 
             font-size: 2.9rem;
@@ -31,7 +31,7 @@
             //border-radius: 10px;
             
             grid-row: 2 / 4;
-            grid-column: 4 / 6;
+            grid-column: 4 / 7;
             
 
         }

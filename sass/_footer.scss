@@ -18,7 +18,7 @@
         grid-row: 1 / 2;
 
         display: grid;
-        grid-template-columns: minmax(3rem, 1fr) repeat(4, minmax(max-content, 30rem)) minmax(3rem, 1fr);
+        grid-template-columns: minmax(3rem, 1fr) repeat(4, auto-fit) minmax(3rem, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 10rem;
         justify-items: center;
