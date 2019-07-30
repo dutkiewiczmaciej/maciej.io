@@ -190,7 +190,6 @@ h3 {
         filter: drop-shadow(5px 5px 5px #222);
         margin-bottom: 4rem;
         background-color: #faf9f9;
-        border-radius: 5px;
         padding: 2rem; }
       .mywork__content--square-1 {
         grid-column: 2 / 3;
@@ -255,28 +254,29 @@ h3 {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
 
 .aboutme {
-  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
   background-image: linear-gradient(to right bottom, rgba(121, 157, 241, 0.3), rgba(19, 35, 96, 0.3)), url(../img/aboutme.jpeg);
   background-size: cover; }
   .aboutme__content {
+    height: 100vh;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100vh;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
-    grid-column-gap: 2rem; }
+    grid-gap: 2rem; }
     .aboutme__content--text {
-      width: 40vw;
-      background-color: #faf9f9;
-      font-size: 2.2rem;
-      padding: 3rem;
-      color: #132360;
-      font-weight: 400;
-      letter-spacing: 2px;
+      background-color: #132360;
+      font-size: 2.9rem;
+      padding: 4rem;
+      color: #faf9f9;
+      font-weight: 300;
+      letter-spacing: 1px;
       z-index: 1;
       text-align: justify;
-      border-radius: 10px;
-      grid-column: 3 / 5; }
+      grid-row: 2 / 4;
+      grid-column: 4 / 6; }
 
 .bg-video {
   position: absolute;
@@ -292,6 +292,8 @@ h3 {
     object-fit: cover; }
 
 .footer {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   height: 30rem;
