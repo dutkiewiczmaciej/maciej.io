@@ -82,7 +82,8 @@ body {
     display: grid;
     grid-template-columns: minmax(3rem, 1fr) repeat(6, minmax(min-content, 4rem)) minmax(3rem, 1fr);
     grid-template-rows: 1fr;
-    align-items: center; }
+    align-items: center;
+    grid-column-gap: 6rem; }
   .header__icon {
     height: 3.5rem;
     fill: #fffa65;
