@@ -60,9 +60,15 @@
     }
 
     &__icons {
+        display: -webkit-box; 
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex; 
         display: flex;
         
+        justify-content: space-around;
         align-items: center;
+        align-content: center;
         //grid-column-gap: 6rem;
         
     }
@@ -80,8 +86,6 @@
             transform: translateY(-1rem);
         }
 
-        &--1 {
-        }
     }
 
     &__arrow {
