@@ -60,9 +60,8 @@
     }
 
     &__icons {
-        display: grid;
-        grid-template-columns: minmax(3rem, 1fr) repeat(6, minmax(min-content, 4rem)) minmax(3rem, 1fr);
-        grid-template-rows: 1fr;
+        display: flex;
+        
         align-items: center;
         //grid-column-gap: 6rem;
         
@@ -82,7 +81,6 @@
         }
 
         &--1 {
-            grid-column: 2 / 3;
         }
     }
 
