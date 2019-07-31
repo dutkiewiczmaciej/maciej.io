@@ -252,23 +252,20 @@ h3 {
   background-size: cover; }
   .aboutme__content {
     height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    justify-items: center;
-    align-items: center;
-    grid-gap: 2rem; }
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
     .aboutme__content--text {
       background-color: rgba(19, 35, 96, 0.8);
+      width: 70%;
       font-size: 2.9rem;
       padding: 4rem;
       color: #faf9f9;
       font-weight: 300;
       letter-spacing: 1px;
       z-index: 1;
-      text-align: justify;
-      grid-row: 2 / 4;
-      grid-column: 4 / 7; }
+      text-align: justify; }
 
 .bg-video {
   position: absolute;
