@@ -11,15 +11,18 @@
 
     &__content {
         height: 100vh;
-        display: grid;
-        grid-template-columns: minmax(3rem, 1fr) repeat(6, 1fr) minmax(3rem, 1fr);
-        //grid-template-rows: 5rem repeat(2, 1fr);
-        grid-row-gap: 3rem;
-        grid-column-gap: 3rem;
+        display: flex;
+        justify-content: space-around;
         align-items: center;
-        justify-items: center;
-        align-content: center;
-        justify-content: center;
+        //display: grid;
+        //grid-template-columns: minmax(3rem, 1fr) repeat(6, 1fr) minmax(3rem, 1fr);
+        //grid-template-rows: 5rem repeat(2, 1fr);
+        //grid-row-gap: 3rem;
+        //grid-column-gap: 3rem;
+        //align-items: center;
+        //justify-items: center;
+        //align-content: center;
+        //justify-content: center;
 
 
         &--line {
