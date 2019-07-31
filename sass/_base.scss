@@ -35,6 +35,10 @@ $font-primary: Lato;
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+
+    a {
+        display: inline-block;
+    }
 }
 
 html {
@@ -52,4 +56,5 @@ body {
 .container {
     scroll-snap-type: y mandatory;
 }
+
 
