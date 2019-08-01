@@ -33,6 +33,10 @@
             letter-spacing: 1px;
             z-index: 1;
             text-align: justify;
+
+            @media only screen and (max-width: $bp-smallest-smallest) {
+                font-size: 2rem;
+            }
             //border-radius: 10px;
             
             //grid-row: 2 / 4;

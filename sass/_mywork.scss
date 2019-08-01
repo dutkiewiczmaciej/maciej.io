@@ -22,6 +22,8 @@
             justify-items: center;
             align-items: center;
             justify-content: center;
+
+            
         }
         //display: grid;
         //grid-template-columns: minmax(3rem, 1fr) repeat(6, 1fr) minmax(3rem, 1fr);
@@ -49,6 +51,10 @@
                 height: 1px;
                 width: 42rem;
             }
+
+            @media only screen and (max-width: $bp-smallest-smallest) {
+                width: 30rem;
+            }
         }
 
         &--square {
@@ -66,6 +72,14 @@
 
                 @media only screen and (max-width: $bp-large) {
                     height: 25rem;
+                }
+
+                @media only screen and (max-width: $bp-smallest-small) {
+                    height: 20rem;
+                }
+
+                @media only screen and (max-width: $bp-smallest-smallest) {
+                    height: 15rem;
                 }
             }
 
