@@ -404,8 +404,6 @@ h3 {
     object-fit: cover; }
 
 .footer {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   height: 30rem;
