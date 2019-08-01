@@ -67,6 +67,10 @@ body {
 
 .container {
     scroll-snap-type: y mandatory;
+
+    @media only screen and (max-width: $bp-smallest-small) {
+        scroll-snap-type: y none;
+    }
 }
 
 
