@@ -27,6 +27,13 @@ $color-grey-light-3: #f0eeee;
 $color-grey-light-4: #ccc;
 $font-primary: Lato;
 
+// RESPONSIVE BREAKPOINTS 
+$bp-largest: 65.625em; //1050px
+$bp-large: 56.25em; //900px
+$bp-medium: 50em; //800px
+$bp-small: 43.75em; //700px
+$bp-smallest: 37.5em; //600px
+
 
 
 *,
@@ -45,6 +52,9 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
 
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
 }
 body {
     font-family: $font-primary;

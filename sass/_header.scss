@@ -27,6 +27,12 @@
         grid-column-gap: 1.5rem;
         align-items: center;
 
+        @media only screen and (max-width: $bp-smallest) {
+            margin: 0 3rem;
+        }
+
+
+
         &::before,
         &::after {
             content: "";
@@ -57,6 +63,11 @@
         &:active {
             transform: scale(1.1);
         }
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin: 0 1rem;
+            text-align: center;
+        }
     }
 
     &__icons {
@@ -70,6 +81,10 @@
         align-items: center;
         align-content: space-around;
         //grid-column-gap: 6rem;
+
+        @media only screen and (max-width: $bp-small) {
+            max-width: 98%;
+        }
         
     }
 
@@ -105,11 +120,30 @@
     &__navbar {
         text-decoration: none;
         list-style: none;
-        display: grid;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        align-items: center;
+        li:not(:last-child) {
+            margin-right: 10rem;
+        }
+        /*display: grid;
         grid-template-columns: minmax(3rem, 1fr) repeat(3, auto-fit) minmax(3rem, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 10rem;
-        justify-items: center;
+        justify-items: center;*/
+
+        /*@media only screen and (max-width: $bp-medium) {
+            grid-template-columns: minmax(1rem, 1fr) repeat(3, auto-fit) minmax(1rem, 1fr);
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            grid-template-columns: minmax(.6rem, 1fr) repeat(3, auto-fit) minmax(.6rem, 1fr);
+        }*/
+
+        @media only screen and (max-width: $bp-small) {
+            grid-column-gap: 5rem;
+        }
         
     }
 
@@ -121,8 +155,8 @@
         padding: 1rem 1rem 1rem 2rem;
         font-size: 2rem;
         color: $color-grey-light-1;
-        grid-row: 2 / 3;
-        align-self: center;
+        //grid-row: 2 / 3;
+        //align-self: center;
         
         
         
@@ -131,7 +165,7 @@
             grid-column: 2 / 3;
             transition: all .2s ease-in-out;
             
-
+            align-self: center;
             &:hover,
             &:active {
                 background-color: #fff;
